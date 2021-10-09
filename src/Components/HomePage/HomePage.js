@@ -27,7 +27,7 @@ const HomePage = () => {
     useEffect(() => {
         if(inputFromLeft!==""&&inputFromMiddle!=="")
         handleCompute();
-     
+     // eslint-disable-next-line 
     }, [inputFromMiddle,inputFromLeft])
 
   return (

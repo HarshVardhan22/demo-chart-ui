@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Card.css";
-import {AiOutlinePlus} from "react-icons/ai"
+
 import {ImPlus} from 'react-icons/im'
 const Card = ({ name, option, handleSelection }) => {
   const [showOptions, setShowOptions] = useState(false);
