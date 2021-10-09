@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./LeftPanel.css";
 import { a } from "../../DummyData";
 import Card from "../Card/Card";
 const LeftPanel = ({ handleLeftInput }) => {
-  const [selectedOption, setSelectedOption] = useState("");
+  
 
   const handleSelection = (e) => {
     handleLeftInput(e.target.innerText);

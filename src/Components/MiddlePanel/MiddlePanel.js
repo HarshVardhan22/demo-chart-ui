@@ -3,7 +3,7 @@ import "./MiddlePanel.css"
 import { b } from '../../DummyData';
 import Card from '../Card/Card';
 const MiddlePanel = ({handleMiddleInput}) => {
-    //const [selectedOption, setSelectedOption] = useState("");
+   
 
     const handleSelection = (e) => {
         handleMiddleInput(e.target.innerText);

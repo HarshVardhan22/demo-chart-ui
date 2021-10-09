@@ -1,9 +1,9 @@
 import React from 'react'
 import "./RightPanel.css"
-const RightPanel = () => {
+const RightPanel = ({value}) => {
     return (
         <div>
-             hi from Right
+            <h1>{value}</h1>
         </div>
     )
 }

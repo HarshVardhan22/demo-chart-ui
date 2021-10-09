@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import LeftPanel from "../LeftPanel/LeftPanel";
 import MiddlePanel from "../MiddlePanel/MiddlePanel";
 import RightPanel from "../RightPanel/RightPanel";
@@ -7,7 +7,7 @@ import "./HomePage.css";
 const HomePage = () => {
     const[inputFromMiddle,setInputFromMiddle] = useState("")
     const[inputFromLeft,setInputFromLeft] = useState("")
-
+    const [outputToRight,setOutputToRight] = useState("")
     const handleLeftInput = (e) => {
         setInputFromLeft(e)
     }
@@ -15,6 +15,20 @@ const HomePage = () => {
     const handleMiddleInput = (e) => {
         setInputFromMiddle(e)
     }
+
+    //handleCompute function takes the value from :
+    //inputFromMiddle and inputFromLeft and then performs some operation
+    //and then returns an output to be shown in the rightMost element
+    const handleCompute = () => {
+      
+        setOutputToRight(inputFromLeft+" "+inputFromMiddle)
+    }
+
+    useEffect(() => {
+        if(inputFromLeft!==""&&inputFromMiddle!=="")
+        handleCompute();
+     
+    }, [inputFromMiddle,inputFromLeft])
 
   return (
     <div className="container homePage">
@@ -30,7 +44,7 @@ const HomePage = () => {
           {inputFromMiddle}
         </div>
         <div className="col-4">
-          <RightPanel />
+          <RightPanel value={outputToRight}/>
         </div>
       </div>
     </div>
