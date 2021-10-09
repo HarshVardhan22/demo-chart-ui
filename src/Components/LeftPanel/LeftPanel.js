@@ -10,7 +10,9 @@ const LeftPanel = ({ handleLeftInput }) => {
   };
 
   return (
-    <div>
+    <div className="cardContainer">
+    <h1>Schema</h1>
+    <hr></hr>
       {a.map((item) => {
         return (
           <Card

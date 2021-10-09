@@ -1,8 +1,7 @@
 .homePage{
-   
-    background-color: #ffffff;
+    background: #e0e0e0;
     box-shadow: -5px 5px 25px -1px rgba(0, 0, 0, 0.75);
-
+    padding: 35px;
     height: 90vh;
     min-width: 95vw;
 }

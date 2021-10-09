@@ -10,7 +10,9 @@ const MiddlePanel = ({handleMiddleInput}) => {
     };
   
     return (
-      <div>
+      <div className="cardContainer">
+      <h1>Object Type</h1>
+      <hr></hr>
         {b.map((item) => {
           return (
             <Card

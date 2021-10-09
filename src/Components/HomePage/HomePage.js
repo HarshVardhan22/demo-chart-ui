@@ -33,17 +33,17 @@ const HomePage = () => {
   return (
     <div className="container homePage">
       <div className="row">
-        <div className="col-4">
+        <div className="col-4 pane">
           {" "}
           <LeftPanel handleLeftInput={handleLeftInput}/>
           {inputFromLeft}
         </div>
-        <div className="col-4">
+        <div className="col-4 pane">
           {" "}
           <MiddlePanel handleMiddleInput={handleMiddleInput}/>
           {inputFromMiddle}
         </div>
-        <div className="col-4">
+        <div className="col-4 pane">
           <RightPanel value={outputToRight}/>
         </div>
       </div>

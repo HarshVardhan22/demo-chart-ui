@@ -3,7 +3,8 @@ import "./RightPanel.css"
 const RightPanel = ({value}) => {
     return (
         <div>
-            <h1>{value}</h1>
+        <h1>Attributes</h1>
+            <h4>Result: {value}</h4>
         </div>
     )
 }
