@@ -1,19 +1,45 @@
+// export const a = [
+//   {
+//     name: "A1",
+//     option: [{ suboption: "option - A1.1" }, { suboption: "option - A1.2" }],
+//   },
+//   {
+//     option: [{ suboption: "option - A2.1" }, { suboption: "option - A2.2" }],
+//   },
+//   { option: [{ suboption: "option - A3.1" }, { suboption: "option - A3.2" }, { suboption: "option - A3.3" }] },
+// ];
+
+// export const b = [{
+//     option: [{ suboption: "option - B1.1" }, { suboption: "option - B1.2" }, { suboption: "option - B1.3" }],
+//   },
+//   {
+//     option: [{ suboption: "option - B2.1" }, { suboption: "option - B2.2" }],
+//   },
+//   { option: [{ suboption: "option - B3.1" }, { suboption: "option - B3.2" }, { suboption: "option - B3.3" }] },];
+
 export const a = [
   {
-    a1: [{ a1_1: "option1" }, { a1_2: "option2" }],
+    name: "A1",
+    option: ["option - A1.1", "option - A1.2"],
   },
   {
-    a2: [{ a2_1: "option1" }, { a2_2: "option2" }],
+    name: "A2",
+    option: ["option - A2.1", "option - A2.2"],
   },
-  { a3: [{ a3_1: "option1" }, { a3_2: "option2" }, { a3_3: "option 3" }] },
+  { name: "A3", option: ["option - A3.1", "option - A3.2", "option - A3.3"] },
 ];
 
-export const b = [{
-    b1: [{ b1_1: "option1" }, { b1_2: "option2" }, { b1_3: "option 3" }],
+export const b = [
+  {
+    name: "B1",
+    option: ["option - B1.1", "option - B1.2", "option - B1.3"],
   },
   {
-    b2: [{ b2_1: "option1" }, { b2_2: "option2" }],
+    name: "B2",
+    option: ["option - B2.1", "option - B2.2"],
   },
-  { b3: [{ b3_1: "option1" }, { b3_2: "option2" }, { b3_3: "option 3" }] },];
-
-
+  {
+    name: "B3",
+    option: ["option - B3.1", "option - B3.2", "option - B3.3"],
+  },
+];
